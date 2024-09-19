@@ -75,6 +75,7 @@ body{
 }
 .card:hover{
     transform: scale(1.1);
+    transition: 0.2s ease-in-out;
 }
 .card p{
     padding: 1rem 0;
