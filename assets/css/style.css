@@ -1,0 +1,126 @@
+:root{
+    font-size: 62.5%;
+
+    /* Cards colors */
+    --TeamBuilder: hsl(0, 78%, 62%);
+    --Supervisor: hsl(180, 62%, 55%);
+    --Karma: hsl(34, 97%, 64%);
+    --Calculator: hsl(212, 86%, 64%);
+
+    /* Fonts  */
+    --Title: hsl(234, 12%, 34%);
+    --Paragraph-and-ShadowColor: hsl(229, 6%, 66%);
+
+    --ParagraphSize: 1.5rem;
+
+    /* Background */
+    --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--VeryLightGray);
+    color: var(--Paragraph-and-ShadowColor);
+    
+    font-family: "Poppins", sans-serif;  
+    font-size: var(--ParagraphSize);
+}
+
+
+/* Header stylization */
+.header{
+    max-width: 55rem;
+    text-align: center;
+    padding: 0 2rem;
+}
+.header .title{
+    color: var(--Title);
+    font-weight: 200;
+}
+.header .title span{
+    display: block;
+    font-weight: 600;
+}
+.header p{
+    padding-top: 2rem;
+}
+
+/* Main stylization */
+.main-card-feature{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+.middle-cards .card:first-child{
+    margin-bottom: 2rem;
+}
+.card{
+    max-width: 30rem;
+    padding: 3rem;
+    border-radius: 1rem;
+    border-top: 5px solid;
+    margin: 1.5rem;
+    font-size: 1.2rem;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0px 10px 25px -5px rgba(73, 128, 160, 0.5);
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card p{
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+.card-image{
+    width: 6.4rem;
+    align-self: flex-end;
+}
+
+
+/* Card special stylization */
+.supervisor{
+    border-color: var(--Supervisor);
+}
+.team-builder{
+    border-color: var(--TeamBuilder);
+}
+.karma{
+    border-color: var(--Karma);
+}
+.calculator{
+    border-color: var(--Calculator);
+}
+.card-title{
+    color: var(--Title);
+}
+
+
+/* Footer */
+.attribution { 
+    font-size: 1.1rem; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none; 
+}
+
+
+/* Responsivity */
+@media (max-width: 1020px) {
+    .title{
+        font-size: 2.6rem;
+    }
+    .main-card-feature{
+        flex-direction: column;
+    }
+}
